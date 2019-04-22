@@ -1,0 +1,75 @@
+<!--
+  Copyright (C) 2019 The LineageOS Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<resources>
+
+    <!-- Mono -->
+    <array name="wallpaper_mono_colors">
+        <item>@color/wallpaper_color_black</item>
+        <item>@color/wallpaper_color_green</item>
+        <item>@color/wallpaper_color_teal</item>
+        <item>@color/wallpaper_color_cyan</item>
+        <item>@color/wallpaper_color_blue</item>
+        <item>@color/wallpaper_color_purple</item>
+        <item>@color/wallpaper_color_pink</item>
+        <item>@color/wallpaper_color_red</item>
+        <item>@color/wallpaper_color_orange</item>
+        <item>@color/wallpaper_color_yellow</item>
+        <item>@color/wallpaper_color_brown</item>
+        <item>@color/wallpaper_color_white</item>
+    </array>
+
+    <string-array name="wallpaper_mono_names">
+        <item>@string/wallpaper_mono_black</item>
+        <item>@string/wallpaper_mono_green</item>
+        <item>@string/wallpaper_mono_teal</item>
+        <item>@string/wallpaper_mono_cyan</item>
+        <item>@string/wallpaper_mono_blue</item>
+        <item>@string/wallpaper_mono_purple</item>
+        <item>@string/wallpaper_mono_pink</item>
+        <item>@string/wallpaper_mono_red</item>
+        <item>@string/wallpaper_mono_orange</item>
+        <item>@string/wallpaper_mono_yellow</item>
+        <item>@string/wallpaper_mono_brown</item>
+        <item>@string/wallpaper_mono_white</item>
+    </string-array>
+
+    <!-- BuiltIn -->
+    <array name="wallpaper_built_in_drawables">
+        <item>@drawable/abstract_ink</item>
+        <item>@drawable/abstract_orderofchaos</item>
+        <item>@drawable/abstract_spacestory</item>
+        <item>@drawable/nature_ice</item>
+        <item>@drawable/nature_nebula</item>
+        <item>@drawable/nature_night</item>
+        <item>@drawable/nature_sea</item>
+        <item>@drawable/space_riseup</item>
+        <item>@drawable/urban_dayroad</item>
+        <item>@drawable/urban_nightroad</item>
+    </array>
+
+    <string-array name="wallpaper_built_in_names">
+        <item>@string/wallpaper_built_in_ink</item>
+        <item>@string/wallpaper_built_in_orderofchaos</item>
+        <item>@string/wallpaper_built_in_spacestory</item>
+        <item>@string/wallpaper_built_in_ice</item>
+        <item>@string/wallpaper_built_in_nebula</item>
+        <item>@string/wallpaper_built_in_night</item>
+        <item>@string/wallpaper_built_in_sea</item>
+        <item>@string/wallpaper_built_in_riseup</item>
+        <item>@string/wallpaper_built_in_dayroad</item>
+        <item>@string/wallpaper_built_in_nightroad</item>
+    </string-array>
+</resources>

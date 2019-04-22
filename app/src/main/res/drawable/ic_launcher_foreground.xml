@@ -1,0 +1,32 @@
+<!--
+  Copyright (C) 2019 The LineageOS Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="88.111885"
+    android:viewportHeight="88.111885">
+    <group
+        android:translateX="26.46387"
+        android:translateY="23.055944">
+        <path
+            android:fillAlpha="0.3"
+            android:fillColor="#000000"
+            android:pathData="M12,9h11v10h-11z" />
+        <path
+            android:fillColor="#ffffff"
+            android:pathData="M17.8588,42C26.9788,42 34.5188,35.2 35.6988,26.4C35.8788,25.12 34.7388,23.98 33.4588,24.16C24.6588,25.34 17.8588,32.88 17.8588,42ZM5.0588,18.5C5.0588,21.26 7.2988,23.5 10.0588,23.5C11.1188,23.5 12.0788,23.18 12.8988,22.62L12.8588,23C12.8588,25.76 15.0988,28 17.8588,28C20.6188,28 22.8588,25.76 22.8588,23L22.8188,22.62C23.6188,23.18 24.5988,23.5 25.6588,23.5C28.4188,23.5 30.6588,21.26 30.6588,18.5C30.6588,16.5 29.4788,14.8 27.7988,14C29.4788,13.2 30.6588,11.5 30.6588,9.5C30.6588,6.74 28.4188,4.5 25.6588,4.5C24.5988,4.5 23.6388,4.82 22.8188,5.38L22.8588,5C22.8588,2.24 20.6188,0 17.8588,0C15.0988,0 12.8588,2.24 12.8588,5L12.8988,5.38C12.0988,4.82 11.1188,4.5 10.0588,4.5C7.2988,4.5 5.0588,6.74 5.0588,9.5C5.0588,11.5 6.2388,13.2 7.9188,14C6.2388,14.8 5.0588,16.5 5.0588,18.5ZM17.8588,9C20.6188,9 22.8588,11.24 22.8588,14C22.8588,16.76 20.6188,19 17.8588,19C15.0988,19 12.8588,16.76 12.8588,14C12.8588,11.24 15.0988,9 17.8588,9ZM0.0188,26.4C1.1988,35.2 8.7388,42 17.8588,42C17.8588,32.88 11.0588,25.34 2.2588,24.16C0.9788,23.98 -0.1612,25.12 0.0188,26.4Z" />
+    </group>
+</vector>
