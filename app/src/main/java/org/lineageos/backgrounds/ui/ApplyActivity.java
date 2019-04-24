@@ -26,6 +26,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -34,12 +35,10 @@ import androidx.core.content.ContextCompat;
 
 import org.lineageos.backgrounds.R;
 import org.lineageos.backgrounds.bundle.WallpaperBundle;
+import org.lineageos.backgrounds.task.ApplyWallpaperTask;
 import org.lineageos.backgrounds.task.LoadDrawableFromUriTask;
 import org.lineageos.backgrounds.util.ColorUtils;
-import org.lineageos.backgrounds.util.TypeConverter;
 import org.lineageos.backgrounds.util.UiUtils;
-
-import java.io.IOException;
 
 public final class ApplyActivity extends AppCompatActivity {
     public static final String EXTRA_TRANSITION_NAME = "transition_shared_preview";
@@ -134,18 +133,22 @@ public final class ApplyActivity extends AppCompatActivity {
     }
 
     private void applyWallpaper() {
+        hideApplyButton();
+
         final Drawable drawable = mPreviewView.getDrawable();
-        final WallpaperManager manager = getSystemService(WallpaperManager.class);
 
-        final Bitmap bm = TypeConverter.drawableToBitmap(drawable);
+        new ApplyWallpaperTask(new ApplyWallpaperTask.Callback() {
+            @Override
+            public void onCompleted(boolean result) {
+                onWallpaperApplied(result);
+            }
 
-        hideApplyButtonAndClose();
-
-        try {
-            manager.setBitmap(bm);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+            @NonNull
+            @Override
+            public WallpaperManager getWallpaperManager() {
+                return getSystemService(WallpaperManager.class);
+            }
+        }).execute(drawable);
     }
 
     private void displayPreview(@Nullable final Drawable drawable) {
@@ -169,17 +172,23 @@ public final class ApplyActivity extends AppCompatActivity {
                 .start();
     }
 
-    private void hideApplyButtonAndClose() {
-        if (mButtonView.getVisibility() == View.GONE) {
-            return;
-        }
-
+    private void hideApplyButton() {
         mButtonView.animate()
                 .scaleX(0f)
                 .scaleY(0f)
-                .setDuration(75)
-                .withEndAction(this::finish)
+                .setDuration(250)
                 .start();
+    }
+
+    private void onWallpaperApplied(final boolean success) {
+        if (success) {
+            setResult(MainActivity.RESULT_APPLIED);
+        }
+
+        Toast.makeText(this, success ? R.string.apply_success : R.string.apply_failure,
+                Toast.LENGTH_LONG).show();
+        finish();
+
     }
 
     private void colorUi() {

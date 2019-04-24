@@ -20,6 +20,9 @@
     <string name="main_wallpaper_pick">Your images</string>
     <string name="apply_action">Apply</string>
 
+    <string name="apply_success">Wallpaper applied</string>
+    <string name="apply_failure">Unable to set this wallpaper</string>
+
     <!-- Mono wallpaper names-->
     <eat-comment />
 

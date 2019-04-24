@@ -42,7 +42,9 @@ import org.lineageos.backgrounds.task.FetchDataTask;
 import java.util.List;
 
 public final class MainActivity extends AppCompatActivity implements SelectionInterface {
+    public static final int RESULT_APPLIED = 917;
     private static final int PICK_IMAGE_FROM_EXT = 618;
+    private static final int APPLY_WALLPAPER = 619;
 
     private ProgressBar mLoadingProgressBar;
     private TextView mLoadingTextView;
@@ -51,7 +53,7 @@ public final class MainActivity extends AppCompatActivity implements SelectionIn
     private WallsAdapter mAdapter;
 
     @Nullable
-    private View holder;
+    private View mHolder;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstance) {
@@ -72,31 +74,28 @@ public final class MainActivity extends AppCompatActivity implements SelectionIn
         super.onResume();
 
         // Cleanup
-        if (holder != null) {
-            holder.setTransitionName("");
-            holder = null;
+        if (mHolder != null) {
+            mHolder.setTransitionName("");
+            mHolder = null;
         }
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode != PICK_IMAGE_FROM_EXT || data == null) {
+        if (requestCode == PICK_IMAGE_FROM_EXT && data != null) {
+            onPickedFromExt(data.getDataString());
             return;
         }
-        final String uri = data.getDataString();
-        if (uri == null) {
-            return;
+        if (requestCode == APPLY_WALLPAPER && resultCode == RESULT_APPLIED) {
+            // We're done
+            finish();
         }
-        // Pass a fake bundle with name as URI path
-        WallpaperBundle fakeBundle = UserWallpaperFactory.build(uri);
-        //noinspection All: we know holder is not null at this point
-        onWallpaperSelected(holder, fakeBundle);
     }
 
     @Override
     public void onWallpaperSelected(@NonNull View view, @Nullable WallpaperBundle bundle) {
-        holder = view;
+        mHolder = view;
         if (bundle == null) {
             pickWallpaperFromExternalStorage();
         } else {
@@ -159,7 +158,7 @@ public final class MainActivity extends AppCompatActivity implements SelectionIn
     private void openPreview(@NonNull final WallpaperBundle bundle) {
         Intent intent = new Intent(this, ApplyActivity.class)
                 .putExtra(ApplyActivity.EXTRA_WALLPAPER, bundle);
-        if (holder == null) {
+        if (mHolder == null) {
             return;
         }
 
@@ -170,10 +169,20 @@ public final class MainActivity extends AppCompatActivity implements SelectionIn
         }
 
         // Shared element transition
-        holder.setTransitionName(ApplyActivity.EXTRA_TRANSITION_NAME);
+        mHolder.setTransitionName(ApplyActivity.EXTRA_TRANSITION_NAME);
         ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
-                this, holder, ApplyActivity.EXTRA_TRANSITION_NAME);
+                this, mHolder, ApplyActivity.EXTRA_TRANSITION_NAME);
 
-        startActivity(intent, options.toBundle());
+        startActivityForResult(intent, APPLY_WALLPAPER, options.toBundle());
+    }
+
+    private void onPickedFromExt(@Nullable final String uriString) {
+        if (uriString == null) {
+            return;
+        }
+        // Pass a fake bundle with name as URI path
+        WallpaperBundle fakeBundle = UserWallpaperFactory.build(uriString);
+        //noinspection All: we know mHolder is not null at this point
+        onWallpaperSelected(mHolder, fakeBundle);
     }
 }
