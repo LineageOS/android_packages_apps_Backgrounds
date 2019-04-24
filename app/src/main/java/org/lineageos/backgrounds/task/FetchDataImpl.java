@@ -26,6 +26,7 @@ import androidx.annotation.NonNull;
 import org.lineageos.backgrounds.R;
 import org.lineageos.backgrounds.bundle.WallpaperBundle;
 import org.lineageos.backgrounds.factory.BuiltInWallpaperFactory;
+import org.lineageos.backgrounds.factory.GradientWallpaperFactory;
 import org.lineageos.backgrounds.factory.MonoWallpaperFactory;
 import org.lineageos.backgrounds.factory.UserWallpaperFactory;
 
@@ -45,6 +46,7 @@ final class FetchDataImpl {
         addUser();
         addBuiltIn();
         addColors();
+        addGradients();
 
         return mData;
     }
@@ -84,6 +86,21 @@ final class FetchDataImpl {
         }
 
         colors.recycle();
+    }
+
+    private void addGradients() {
+        Resources res = mCallbacks.getResources();
+        String[] names = res.getStringArray(R.array.wallpaper_gradient_names);
+        TypedArray gradients = res.obtainTypedArray(R.array.wallpaper_gradient_drawables);
+        for (int i = 0; i < gradients.length(); i++) {
+            final TypedValue value = new TypedValue();
+            gradients.getValue(i, value);
+            if (value.resourceId != 0) {
+                mData.add(GradientWallpaperFactory.build(names[i], res, value.resourceId));
+            }
+        }
+
+        gradients.recycle();
     }
 
     public interface Callback {

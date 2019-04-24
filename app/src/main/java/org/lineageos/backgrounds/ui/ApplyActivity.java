@@ -39,6 +39,7 @@ import org.lineageos.backgrounds.bundle.WallpaperBundle;
 import org.lineageos.backgrounds.task.ApplyWallpaperTask;
 import org.lineageos.backgrounds.task.LoadDrawableFromUriTask;
 import org.lineageos.backgrounds.util.ColorUtils;
+import org.lineageos.backgrounds.util.TypeConverter;
 import org.lineageos.backgrounds.util.UiUtils;
 
 public final class ApplyActivity extends AppCompatActivity {
@@ -90,6 +91,9 @@ public final class ApplyActivity extends AppCompatActivity {
             case DEFAULT:
                 setupDefault();
                 break;
+            case GRADIENT:
+                setupGradient(wallpaperBundle);
+                break;
             case MONO:
                 setupMono(wallpaperBundle);
                 break;
@@ -120,6 +124,25 @@ public final class ApplyActivity extends AppCompatActivity {
         bm.eraseColor(bundle.getDescriptor());
         Drawable drawable = new BitmapDrawable(getResources(), bm);
         displayPreview(drawable);
+    }
+
+    private void setupGradient(@NonNull final WallpaperBundle bundle) {
+        /*
+         * Welcome to HackLand pt2: GradientDrawable doesn't play nicely with
+         * shared element transitions, so we have to make some magic:
+         * 1. Get the OG drawable
+         * 2. Convert to a Bitmap
+         * 3. Convert the Bitmap to a BitmapDrawable
+         * 4. Apply the BitmapDrawable
+         */
+        final Drawable origDrawable = ContextCompat.getDrawable(this, bundle.getDescriptor());
+        if (origDrawable == null) {
+            return;
+        }
+
+        final Bitmap bm = TypeConverter.drawableToBitmap(origDrawable);
+        final BitmapDrawable bmd = new BitmapDrawable(getResources(), bm);
+        displayPreview(bmd);
     }
 
     private void setupUser(@Nullable final String wallpaperUri) {

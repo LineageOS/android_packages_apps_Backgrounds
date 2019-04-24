@@ -18,6 +18,7 @@ package org.lineageos.backgrounds.bundle;
 public enum WallpaperType {
     BUILT_IN,
     DEFAULT,
+    GRADIENT,
     MONO,
     USER
 }

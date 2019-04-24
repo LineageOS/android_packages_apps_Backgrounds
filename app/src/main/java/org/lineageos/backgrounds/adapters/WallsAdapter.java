@@ -50,6 +50,7 @@ public final class WallsAdapter extends RecyclerView.Adapter<WallpaperHolder> {
         switch (type) {
             case BUILT_IN:
             case DEFAULT:
+            case GRADIENT:
             case MONO:
                 return buildDefaultHolder(parent);
             default:

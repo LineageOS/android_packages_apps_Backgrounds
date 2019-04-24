@@ -37,6 +37,8 @@ public final class TypeConverter {
             case 2:
                 return WallpaperType.DEFAULT;
             case 3:
+                return WallpaperType.GRADIENT;
+            case 4:
                 return WallpaperType.MONO;
             default:
                 return WallpaperType.USER;
@@ -49,8 +51,10 @@ public final class TypeConverter {
                 return 1;
             case DEFAULT:
                 return 2;
-            case MONO:
+            case GRADIENT:
                 return 3;
+            case MONO:
+                return 4;
             default:
                 return 0;
         }
@@ -66,8 +70,12 @@ public final class TypeConverter {
             }
         }
 
-        final Bitmap bm = Bitmap.createBitmap(drawable.getIntrinsicWidth(),
-                drawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+        final int drawableWidth = drawable.getIntrinsicWidth();
+        final int drawableHeight = drawable.getIntrinsicHeight();
+        final Bitmap bm = Bitmap.createBitmap(
+                drawableWidth > 0 ? drawableWidth : 1000,
+                drawableHeight > 0 ? drawableHeight : 1000,
+                Bitmap.Config.ARGB_8888);
         final Canvas canvas = new Canvas(bm);
         drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
         drawable.draw(canvas);

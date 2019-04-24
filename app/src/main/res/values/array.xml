@@ -72,4 +72,29 @@
         <item>@string/wallpaper_built_in_dayroad</item>
         <item>@string/wallpaper_built_in_nightroad</item>
     </string-array>
+
+    <!-- Gradients -->
+    <array name="wallpaper_gradient_drawables">
+        <item>@drawable/gradient_iron</item>
+        <item>@drawable/gradient_leaf</item>
+        <item>@drawable/gradient_lemon</item>
+        <item>@drawable/gradient_neon</item>
+        <item>@drawable/gradient_ocean</item>
+        <item>@drawable/gradient_orange</item>
+        <item>@drawable/gradient_peach</item>
+        <item>@drawable/gradient_plum</item>
+        <item>@drawable/gradient_shine</item>
+    </array>
+
+    <string-array name="wallpaper_gradient_names">
+        <item>@string/wallpaper_gradient_iron</item>
+        <item>@string/wallpaper_gradient_leaf</item>
+        <item>@string/wallpaper_gradient_lemon</item>
+        <item>@string/wallpaper_gradient_neon</item>
+        <item>@string/wallpaper_gradient_ocean</item>
+        <item>@string/wallpaper_gradient_orange</item>
+        <item>@string/wallpaper_gradient_peach</item>
+        <item>@string/wallpaper_gradient_plum</item>
+        <item>@string/wallpaper_gradient_shine</item>
+    </string-array>
 </resources>
