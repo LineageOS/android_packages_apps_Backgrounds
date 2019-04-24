@@ -30,7 +30,7 @@ import androidx.annotation.Nullable;
 import java.io.FileDescriptor;
 import java.io.IOException;
 
-class LoadDrawableFromUriImpl {
+final class LoadDrawableFromUriImpl {
     @NonNull
     private final Callback mCallbacks;
 

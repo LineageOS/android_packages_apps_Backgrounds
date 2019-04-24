@@ -26,7 +26,7 @@ import org.lineageos.backgrounds.R;
 import org.lineageos.backgrounds.bundle.WallpaperBundle;
 import org.lineageos.backgrounds.bundle.WallpaperType;
 
-public class BuiltInWallpaperFactory {
+public final class BuiltInWallpaperFactory {
 
     private BuiltInWallpaperFactory() {
     }

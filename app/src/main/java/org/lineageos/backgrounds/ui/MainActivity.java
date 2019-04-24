@@ -41,7 +41,7 @@ import org.lineageos.backgrounds.task.FetchDataTask;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements SelectionInterface {
+public final class MainActivity extends AppCompatActivity implements SelectionInterface {
     private static final int PICK_IMAGE_FROM_EXT = 618;
 
     private ProgressBar mLoadingProgressBar;

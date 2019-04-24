@@ -19,7 +19,6 @@ import android.app.WallpaperManager;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.util.TypedValue;
 
 import androidx.annotation.NonNull;

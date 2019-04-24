@@ -25,7 +25,7 @@ import org.lineageos.backgrounds.bundle.WallpaperBundle;
 
 import java.util.List;
 
-public class FetchDataTask extends AsyncTask<Void, Integer, List<WallpaperBundle>> implements
+public final class FetchDataTask extends AsyncTask<Void, Integer, List<WallpaperBundle>> implements
         FetchDataImpl.Callback {
     private final FetchDataTask.Callback mCallbacks;
 

@@ -62,7 +62,7 @@ public final class WallpaperBundle implements Parcelable {
         mType = type;
     }
 
-    public WallpaperBundle(@NonNull final Parcel parcel) {
+    private WallpaperBundle(@NonNull final Parcel parcel) {
         final String parcelName = parcel.readString();
         mName = parcelName == null ? "" : parcelName;
         mContentDrawable = null;

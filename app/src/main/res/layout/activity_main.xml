@@ -13,7 +13,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -35,11 +35,10 @@
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="24sp" />
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/main_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingHorizontal="4dp"
         android:visibility="gone" />
-</FrameLayout>
+</merge>

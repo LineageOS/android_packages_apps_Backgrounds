@@ -41,7 +41,7 @@ import org.lineageos.backgrounds.util.UiUtils;
 
 import java.io.IOException;
 
-public class ApplyActivity extends AppCompatActivity {
+public final class ApplyActivity extends AppCompatActivity {
     public static final String EXTRA_TRANSITION_NAME = "transition_shared_preview";
     static final String EXTRA_WALLPAPER = "apply_extra_wallpaper_parcel";
 
@@ -178,7 +178,7 @@ public class ApplyActivity extends AppCompatActivity {
                 .scaleX(0f)
                 .scaleY(0f)
                 .setDuration(75)
-                .withEndAction(() -> finish())
+                .withEndAction(this::finish)
                 .start();
     }
 

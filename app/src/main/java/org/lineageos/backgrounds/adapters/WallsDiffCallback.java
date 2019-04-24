@@ -24,10 +24,10 @@ import java.util.List;
 
 final class WallsDiffCallback extends DiffUtil.Callback {
     @NonNull
-    private List<WallpaperBundle> mOld;
+    private final List<WallpaperBundle> mOld;
 
     @NonNull
-    private List<WallpaperBundle> mNew;
+    private final List<WallpaperBundle> mNew;
 
     WallsDiffCallback(@NonNull final List<WallpaperBundle> oldList,
                       @NonNull final List<WallpaperBundle> newList) {
