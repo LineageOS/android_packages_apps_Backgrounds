@@ -30,8 +30,9 @@
 
         <activity
             android:name=".ui.MainActivity"
-            android:theme="@style/AppTheme.TranslucentNav"
-            android:excludeFromRecents="true">
+            android:excludeFromRecents="true"
+            android:resizeableActivity="false"
+            android:theme="@style/AppTheme.TranslucentNav">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -44,7 +45,8 @@
 
         <activity
             android:name=".ui.ApplyActivity"
-            android:excludeFromRecents="true" />
+            android:excludeFromRecents="true"
+            android:resizeableActivity="false" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
