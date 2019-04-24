@@ -38,6 +38,7 @@ import org.lineageos.backgrounds.bundle.WallpaperBundle;
 import org.lineageos.backgrounds.bundle.WallpaperType;
 import org.lineageos.backgrounds.factory.UserWallpaperFactory;
 import org.lineageos.backgrounds.task.FetchDataTask;
+import org.lineageos.backgrounds.util.UiUtils;
 
 import java.util.List;
 
@@ -104,6 +105,8 @@ public final class MainActivity extends AppCompatActivity implements SelectionIn
     }
 
     private void setupRecyclerView() {
+        //UiUtils.addSystemUiPadding(getResources(), mContentRecyclerView);
+
         mAdapter = new WallsAdapter(this);
 
         int numOfColumns = getResources().getInteger(R.integer.main_list_columns);

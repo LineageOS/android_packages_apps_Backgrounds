@@ -14,6 +14,7 @@
   limitations under the License.
   -->
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -38,7 +39,10 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/main_recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/main_list_margin_left"
+        android:layout_marginTop="24dp"
         android:paddingHorizontal="4dp"
-        android:visibility="gone" />
+        android:visibility="gone"
+        tools:ignore="RtlHardcoded" />
 </merge>

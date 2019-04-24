@@ -30,6 +30,7 @@
 
         <activity
             android:name=".ui.MainActivity"
+            android:theme="@style/AppTheme.TranslucentNav"
             android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

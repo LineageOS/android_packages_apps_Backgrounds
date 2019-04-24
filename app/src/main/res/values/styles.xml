@@ -20,11 +20,14 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="isLightTheme">@bool/isLight</item>
-        <item name="android:navigationBarColor">@color/navigationBar_color</item>
-        <item name="android:navigationBarDividerColor">@color/navigationBar_divider</item>
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowLightStatusBar">@bool/isLight</item>
         <item name="android:windowLightNavigationBar">@bool/isLight</item>
+    </style>
+
+    <style name="AppTheme.TranslucentNav">
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
     </style>
 
     <style name="AppTheme.ApplyButton">
