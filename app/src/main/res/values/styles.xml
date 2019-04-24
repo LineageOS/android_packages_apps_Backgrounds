@@ -26,4 +26,15 @@
         <item name="android:windowLightStatusBar">@bool/isLight</item>
         <item name="android:windowLightNavigationBar">@bool/isLight</item>
     </style>
+
+    <style name="AppTheme.ApplyButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:alpha">0.8</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAlignment">center</item>
+    </style>
 </resources>

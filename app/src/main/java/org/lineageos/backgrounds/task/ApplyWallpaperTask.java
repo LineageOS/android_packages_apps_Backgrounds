@@ -48,10 +48,17 @@ public final class ApplyWallpaperTask extends AsyncTask<Drawable, Void, Boolean>
         return mCallbacks.getWallpaperManager();
     }
 
+    @Override
+    public int getFlags() {
+        return mCallbacks.getFlags();
+    }
+
     public interface Callback {
         void onCompleted(final boolean result);
 
         @NonNull
         WallpaperManager getWallpaperManager();
+
+        int getFlags();
     }
 }

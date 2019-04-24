@@ -25,6 +25,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,8 +45,15 @@ public final class ApplyActivity extends AppCompatActivity {
     public static final String EXTRA_TRANSITION_NAME = "transition_shared_preview";
     static final String EXTRA_WALLPAPER = "apply_extra_wallpaper_parcel";
 
+    private static final int BOTH_FLAG = WallpaperManager.FLAG_SYSTEM | WallpaperManager.FLAG_LOCK;
+    private static final int HOME_FLAG = WallpaperManager.FLAG_SYSTEM;
+    private static final int LOCK_FLAG = WallpaperManager.FLAG_LOCK;
+
     private ImageView mPreviewView;
-    private TextView mButtonView;
+    private LinearLayout mApplyView;
+    private TextView mBothView;
+    private TextView mHomeView;
+    private TextView mLockView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstance) {
@@ -54,9 +62,14 @@ public final class ApplyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_apply);
 
         mPreviewView = findViewById(R.id.apply_preview);
-        mButtonView = findViewById(R.id.apply_button);
+        mApplyView = findViewById(R.id.apply_button);
+        mBothView = findViewById(R.id.apply_both);
+        mHomeView = findViewById(R.id.apply_home);
+        mLockView = findViewById(R.id.apply_lock);
 
-        mButtonView.setOnClickListener(v -> applyWallpaper());
+        mBothView.setOnClickListener(v -> applyWallpaper(BOTH_FLAG));
+        mHomeView.setOnClickListener(v -> applyWallpaper(HOME_FLAG));
+        mLockView.setOnClickListener(v -> applyWallpaper(LOCK_FLAG));
 
         setup();
     }
@@ -132,7 +145,7 @@ public final class ApplyActivity extends AppCompatActivity {
         }).execute(wallpaperUri);
     }
 
-    private void applyWallpaper() {
+    private void applyWallpaper(final int flags) {
         hideApplyButton();
 
         final Drawable drawable = mPreviewView.getDrawable();
@@ -148,6 +161,11 @@ public final class ApplyActivity extends AppCompatActivity {
             public WallpaperManager getWallpaperManager() {
                 return getSystemService(WallpaperManager.class);
             }
+
+            @Override
+            public int getFlags() {
+                return flags;
+            }
         }).execute(drawable);
     }
 
@@ -162,10 +180,10 @@ public final class ApplyActivity extends AppCompatActivity {
     }
 
     private void showApplyButton() {
-        mButtonView.setScaleX(0f);
-        mButtonView.setScaleY(0f);
-        mButtonView.setVisibility(View.VISIBLE);
-        mButtonView.animate()
+        mApplyView.setScaleX(0f);
+        mApplyView.setScaleY(0f);
+        mApplyView.setVisibility(View.VISIBLE);
+        mApplyView.animate()
                 .setStartDelay(350)
                 .scaleX(1f)
                 .scaleY(1f)
@@ -173,7 +191,7 @@ public final class ApplyActivity extends AppCompatActivity {
     }
 
     private void hideApplyButton() {
-        mButtonView.animate()
+        mApplyView.animate()
                 .scaleX(0f)
                 .scaleY(0f)
                 .setDuration(250)
@@ -199,9 +217,18 @@ public final class ApplyActivity extends AppCompatActivity {
         UiUtils.setSystemUiColors(getWindow(), color);
 
         // Apply
-        final ColorStateList colorStateList = ColorStateList.valueOf(color);
-        mButtonView.setBackgroundTintList(colorStateList);
-        mButtonView.setTextColor(getColor(ColorUtils.isColorLight(color) ?
-                android.R.color.black : android.R.color.white));
+        final ColorStateList backgroundList = ColorStateList.valueOf(color);
+        mApplyView.setBackgroundTintList(backgroundList);
+
+        final int actionsColor = getColor(ColorUtils.isColorLight(color) ?
+                android.R.color.black : android.R.color.white);
+        final ColorStateList actionsList = ColorStateList.valueOf(actionsColor);
+
+        mBothView.setTextColor(actionsColor);
+        mBothView.setCompoundDrawableTintList(actionsList);
+        mHomeView.setTextColor(actionsColor);
+        mHomeView.setCompoundDrawableTintList(actionsList);
+        mLockView.setTextColor(actionsColor);
+        mLockView.setCompoundDrawableTintList(actionsList);
     }
 }

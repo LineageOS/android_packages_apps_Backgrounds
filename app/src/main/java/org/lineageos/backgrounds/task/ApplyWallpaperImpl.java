@@ -41,7 +41,7 @@ final class ApplyWallpaperImpl {
         final WallpaperManager manager = mCallback.getWallpaperManager();
 
         try {
-            manager.setBitmap(bm);
+            manager.setBitmap(bm, null, true, mCallback.getFlags());
             return true;
         } catch (IOException e) {
             Log.e(TAG, e.getMessage(), e);
@@ -53,5 +53,7 @@ final class ApplyWallpaperImpl {
 
         @NonNull
         WallpaperManager getWallpaperManager();
+
+        int getFlags();
     }
 }
