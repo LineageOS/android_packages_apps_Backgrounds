@@ -54,6 +54,7 @@ public final class ApplyActivity extends AppCompatActivity {
     private TextView mBothView;
     private TextView mHomeView;
     private TextView mLockView;
+    private ImageView mCloseView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstance) {
@@ -66,10 +67,12 @@ public final class ApplyActivity extends AppCompatActivity {
         mBothView = findViewById(R.id.apply_both);
         mHomeView = findViewById(R.id.apply_home);
         mLockView = findViewById(R.id.apply_lock);
+        mCloseView = findViewById(R.id.apply_close);
 
         mBothView.setOnClickListener(v -> applyWallpaper(BOTH_FLAG));
         mHomeView.setOnClickListener(v -> applyWallpaper(HOME_FLAG));
         mLockView.setOnClickListener(v -> applyWallpaper(LOCK_FLAG));
+        mCloseView.setOnClickListener(v -> finish());
 
         setup();
     }
@@ -147,6 +150,7 @@ public final class ApplyActivity extends AppCompatActivity {
 
     private void applyWallpaper(final int flags) {
         hideApplyButton();
+        mCloseView.setClickable(false);
 
         final Drawable drawable = mPreviewView.getDrawable();
 

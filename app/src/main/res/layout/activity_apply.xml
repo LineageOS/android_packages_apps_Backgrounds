@@ -27,7 +27,18 @@
         android:fitsSystemWindows="true"
         android:scaleType="centerCrop"
         android:transitionName="transition_shared_preview"
-        tools:src="@drawable/nature_night" />
+        tools:src="@drawable/space_riseup" />
+
+    <ImageView
+        android:id="@+id/apply_close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="top|start"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_apply_close"
+        android:contentDescription="@string/apply_close"
+        android:padding="4dp"
+        android:src="@drawable/ic_close" />
 
     <LinearLayout
         android:id="@+id/apply_button"

@@ -25,6 +25,8 @@
     <string name="apply_success">Wallpaper applied</string>
     <string name="apply_failure">Unable to set this wallpaper</string>
 
+    <string name="apply_close">Close</string>
+
     <!-- Mono wallpaper names-->
     <eat-comment />
 
