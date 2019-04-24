@@ -18,4 +18,6 @@
     <dimen name="item_margin_horizontal">4dp</dimen>
 
     <dimen name="main_list_margin_left">0dp</dimen>
+
+    <dimen name="apply_margin_horizontal">40dp</dimen>
 </resources>
