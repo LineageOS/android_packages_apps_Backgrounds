@@ -21,13 +21,16 @@
 
     <application
         android:allowBackup="false"
+        android:appCategory="image"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".ui.MainActivity">
+        <activity
+            android:name=".ui.MainActivity"
+            android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -38,7 +41,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.ApplyActivity" />
+        <activity
+            android:name=".ui.ApplyActivity"
+            android:excludeFromRecents="true" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
