@@ -39,12 +39,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="@drawable/bg_wallpaper_name"
         android:ellipsize="end"
         android:maxLines="1"
         android:paddingHorizontal="8dp"
-        android:paddingVertical="4dp"
-        android:textColor="@android:color/white"
+        android:paddingBottom="8dp"
         android:textSize="18sp"
         tools:text="@string/main_wallpaper_pick" />
 
