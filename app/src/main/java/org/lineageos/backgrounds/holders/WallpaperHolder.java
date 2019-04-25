@@ -26,7 +26,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import org.lineageos.backgrounds.R;
 import org.lineageos.backgrounds.bundle.WallpaperBundle;
 import org.lineageos.backgrounds.ui.SelectionInterface;
-import org.lineageos.backgrounds.util.UiUtils;
 
 public class WallpaperHolder extends RecyclerView.ViewHolder {
     @NonNull
@@ -40,8 +39,7 @@ public class WallpaperHolder extends RecyclerView.ViewHolder {
         this.callback = callback;
     }
 
-    public void bind(@NonNull final WallpaperBundle bundle,
-                     final boolean isLast) {
+    public void bind(@NonNull final WallpaperBundle bundle) {
         previewView = itemView.findViewById(R.id.item_wallpaper_preview);
         TextView nameView = itemView.findViewById(R.id.item_wallpaper_name);
 
@@ -57,9 +55,5 @@ public class WallpaperHolder extends RecyclerView.ViewHolder {
         nameView.setText(name);
 
         itemView.setOnClickListener((v) -> callback.onWallpaperSelected(previewView, bundle));
-
-        // Update margins
-        UiUtils.setMarginForListItem(itemView.getResources(), itemView,
-                R.dimen.item_margin_vertical, isLast);
     }
 }
