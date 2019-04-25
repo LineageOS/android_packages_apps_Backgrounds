@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7c3ad51d_c5e07a3c",
+        "filename": "app/src/main/res/values/wallpapers_mono.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 8461
+      },
+      "writtenOn": "2019-04-25T14:16:35Z",
+      "side": 1,
+      "message": "This was necessary to allow the palette library to extract a valid color out of the drawable. Pure white or really white-ish whites makes it return always black as extracted dominant and vibrant color, so I was unable to properly set the title color to black",
+      "range": {
+        "startLine": 28,
+        "startChar": 41,
+        "endLine": 28,
+        "endChar": 47
+      },
+      "revId": "4ec2d88cf1cff8fb6a2f23416e8bf8e8339a5078",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
