@@ -30,9 +30,8 @@ public final class UserHolder extends WallpaperHolder {
     }
 
     @Override
-    public void bind(@NonNull final WallpaperBundle bundle,
-                     final boolean isLast) {
-        super.bind(bundle, isLast);
+    public void bind(@NonNull final WallpaperBundle bundle) {
+        super.bind(bundle);
 
         itemView.setOnClickListener(v -> callback.onWallpaperSelected(previewView, null));
     }

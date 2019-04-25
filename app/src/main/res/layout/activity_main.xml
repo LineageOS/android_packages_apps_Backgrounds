@@ -36,13 +36,35 @@
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="24sp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/main_recyclerview"
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/main_contents"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/main_list_margin_left"
-        android:layout_marginTop="24dp"
-        android:paddingHorizontal="4dp"
-        android:visibility="gone"
-        tools:ignore="RtlHardcoded" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Top margin -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="136dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/main_list_margin_left"
+                android:layout_marginTop="24dp"
+                android:paddingHorizontal="4dp"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />
+
+            <!-- Bottom margin -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="72dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </merge>
