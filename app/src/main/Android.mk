@@ -36,7 +36,8 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.appcompat_appcompat \
     androidx.palette_palette \
     androidx.recyclerview_recyclerview \
-    androidx.transition_transition
+    androidx.transition_transition \
+    com.google.android.material_material
 
 LOCAL_PACKAGE_NAME := Backgrounds
 

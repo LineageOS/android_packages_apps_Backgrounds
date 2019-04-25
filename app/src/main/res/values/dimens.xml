@@ -19,5 +19,5 @@
 
     <dimen name="main_list_margin_left">0dp</dimen>
 
-    <dimen name="apply_margin_horizontal">40dp</dimen>
+    <dimen name="apply_margin_horizontal">0dp</dimen>
 </resources>

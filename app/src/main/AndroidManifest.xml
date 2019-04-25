@@ -46,7 +46,8 @@
         <activity
             android:name=".ui.ApplyActivity"
             android:excludeFromRecents="true"
-            android:resizeableActivity="false" />
+            android:resizeableActivity="false"
+            android:theme="@style/AppTheme.PrimaryNav" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

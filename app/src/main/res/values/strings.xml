@@ -18,8 +18,8 @@
 
     <string name="main_loading">Loading\u2026</string>
     <string name="main_wallpaper_pick">Your images</string>
-    <string name="apply_both_action">Device</string>
-    <string name="apply_home_action">Home</string>
+    <string name="apply_both_action">Home &amp; lock screen</string>
+    <string name="apply_home_action">Home screen</string>
     <string name="apply_lock_action">Lock screen</string>
 
     <string name="apply_success">Wallpaper applied</string>

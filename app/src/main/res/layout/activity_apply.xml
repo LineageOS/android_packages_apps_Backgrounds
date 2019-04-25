@@ -13,7 +13,8 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<merge xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -43,40 +44,36 @@
     <LinearLayout
         android:id="@+id/apply_button"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
         android:layout_marginHorizontal="@dimen/apply_margin_horizontal"
-        android:layout_marginBottom="24dp"
         android:background="@drawable/bg_apply_button"
         android:elevation="4dp"
         android:foregroundGravity="center"
         android:orientation="horizontal"
         android:paddingHorizontal="8dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="8dp"
-        android:visibility="gone"
+        android:paddingVertical="24dp"
         android:weightSum="3"
-        tools:visibility="visible">
-
-        <TextView
-            android:id="@+id/apply_both"
-            style="@style/AppTheme.ApplyButton"
-            android:drawableTop="@drawable/ic_device"
-            android:text="@string/apply_both_action"
-            tools:textColor="@android:color/white" />
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="48dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
         <TextView
             android:id="@+id/apply_home"
             style="@style/AppTheme.ApplyButton"
-            android:drawableTop="@drawable/ic_home"
-            android:text="@string/apply_home_action"
-            tools:textColor="@android:color/white" />
+            android:drawableTop="@drawable/ic_set_home"
+            android:text="@string/apply_home_action" />
 
         <TextView
             android:id="@+id/apply_lock"
             style="@style/AppTheme.ApplyButton"
-            android:drawableTop="@drawable/ic_lock"
-            android:text="@string/apply_lock_action"
-            tools:textColor="@android:color/white" />
+            android:drawableTop="@drawable/ic_set_lock"
+            android:text="@string/apply_lock_action" />
+
+        <TextView
+            android:id="@+id/apply_both"
+            style="@style/AppTheme.ApplyButton"
+            android:drawableTop="@drawable/ic_set_both"
+            android:text="@string/apply_both_action" />
     </LinearLayout>
-</merge>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
