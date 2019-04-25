@@ -38,7 +38,6 @@ import org.lineageos.backgrounds.bundle.WallpaperBundle;
 import org.lineageos.backgrounds.bundle.WallpaperType;
 import org.lineageos.backgrounds.factory.UserWallpaperFactory;
 import org.lineageos.backgrounds.task.FetchDataTask;
-import org.lineageos.backgrounds.util.UiUtils;
 
 import java.util.List;
 

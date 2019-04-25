@@ -16,7 +16,6 @@
 package org.lineageos.backgrounds.util;
 
 import android.content.res.Resources;
-import android.os.Build;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -25,29 +24,19 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.DimenRes;
 import androidx.annotation.NonNull;
 
-import org.lineageos.backgrounds.R;
-
 public final class UiUtils {
 
     private UiUtils() {
     }
 
-    public static void setSystemUiColors(@NonNull final Window window, @ColorInt final int color) {
-        final boolean isLight = ColorUtils.isColorLight(color);
-
+    public static void setStatusBarColor(@NonNull final Window window, @ColorInt final int color) {
         window.setStatusBarColor(color);
-        window.setNavigationBarColor(color);
-        if (Build.VERSION.SDK_INT >= 28) {
-            window.setNavigationBarDividerColor(color);
-        }
-
+        final boolean isLight = ColorUtils.isColorLight(color);
         int flags = window.getDecorView().getSystemUiVisibility();
         if (isLight) {
-            flags |= View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR
-                    | View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
+            flags |= View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
         } else {
-            flags &= ~View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR
-                    & ~View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
+            flags &= ~View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
         }
 
         window.getDecorView().setSystemUiVisibility(flags);

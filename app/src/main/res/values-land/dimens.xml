@@ -16,5 +16,5 @@
 <resources>
     <dimen name="main_list_margin_left">48dp</dimen>
 
-    <dimen name="apply_margin_horizontal">88dp</dimen>
+    <dimen name="apply_margin_horizontal">40dp</dimen>
 </resources>

@@ -22,9 +22,6 @@
 
     <color name="ic_launcher_background">#70AE98</color>
 
-    <color name="navigationBar_color">@android:color/white</color>
-    <color name="navigationBar_divider">#1f000000</color>
-
     <color name="item_nameBg">#1f000000</color>
     <color name="apply_closeBg">#4f000000</color>
 </resources>
