@@ -18,6 +18,7 @@ package org.lineageos.backgrounds.util;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
@@ -33,9 +34,18 @@ public final class ColorUtils {
         return Palette.from(bm).generate();
     }
 
+    public static Palette extractPaletteFromBottom(@NonNull final Drawable drawable) {
+        final Bitmap originalBm = TypeConverter.drawableToBitmap(drawable);
+        // Crop bottom 20%
+        final int cropY = (int) (originalBm.getHeight() * 0.8f);
+        final Bitmap bottomPart = Bitmap.createBitmap(originalBm, 0, cropY,
+                originalBm.getWidth(), originalBm.getHeight() - cropY);
+        return Palette.from(bottomPart).generate();
+    }
+
     @ColorInt
     public static int extractColor(@NonNull final Palette palette) {
-        final int muted = palette.getMutedColor(Color.WHITE);
+        final int muted = palette.getDominantColor(Color.WHITE);
         if (muted != Color.WHITE) {
             return muted;
         }
@@ -43,12 +53,27 @@ public final class ColorUtils {
         if (vibrant != Color.WHITE) {
             return vibrant;
         }
-        return darken(palette.getDominantColor(Color.WHITE));
+        return palette.getMutedColor(Color.WHITE);
     }
 
+
     @ColorInt
-    private static int darken(@ColorInt final int color) {
-        return androidx.core.graphics.ColorUtils.blendARGB(color, Color.BLACK, 0.2f);
+    public static int extractContrastColor(@NonNull final Palette palette) {
+        int color = Color.BLACK;
+
+        final Palette.Swatch dominant = palette.getDominantSwatch();
+        if (dominant != null) {
+            color = dominant.getRgb();
+        } else {
+            final Palette.Swatch vibrant = palette.getVibrantSwatch();
+            if (vibrant != null) {
+                color = vibrant.getRgb();
+            }
+        }
+
+        Log.d("OHAI", Integer.toHexString(color));
+
+        return isColorLight(color) ? Color.BLACK : Color.WHITE;
     }
 
     public static boolean isColorLight(@ColorInt final int color) {
@@ -60,6 +85,6 @@ public final class ColorUtils {
         float hsl[] = new float[3];
 
         androidx.core.graphics.ColorUtils.RGBToHSL(red, green, blue, hsl);
-        return hsl[2] > 0.5f;
+        return hsl[2] > 0.76f;
     }
 }
