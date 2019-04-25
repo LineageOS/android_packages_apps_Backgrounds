@@ -26,6 +26,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import org.lineageos.backgrounds.R;
 import org.lineageos.backgrounds.bundle.WallpaperBundle;
 import org.lineageos.backgrounds.ui.SelectionInterface;
+import org.lineageos.backgrounds.util.ColorUtils;
 
 public class WallpaperHolder extends RecyclerView.ViewHolder {
     @NonNull
@@ -49,6 +50,10 @@ public class WallpaperHolder extends RecyclerView.ViewHolder {
         Drawable drawable = bundle.getContentDrawable();
         if (drawable != null) {
             previewView.setImageDrawable(drawable);
+
+            // Tint title for contrast
+            final int color = ColorUtils.extractContrastColor(ColorUtils.extractPaletteFromBottom(drawable));
+            nameView.setTextColor(color);
         }
 
         String name = bundle.getName();
