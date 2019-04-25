@@ -28,6 +28,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
@@ -48,6 +49,8 @@ public final class MainActivity extends AppCompatActivity implements SelectionIn
 
     private ProgressBar mLoadingProgressBar;
     private TextView mLoadingTextView;
+    private NestedScrollView mContentLayout;
+    private TextView mTitleView;
     private RecyclerView mContentRecyclerView;
 
     private WallsAdapter mAdapter;
@@ -63,10 +66,13 @@ public final class MainActivity extends AppCompatActivity implements SelectionIn
 
         mLoadingProgressBar = findViewById(R.id.main_loading_bar);
         mLoadingTextView = findViewById(R.id.main_loading_text);
+        mContentLayout = findViewById(R.id.main_contents);
+        mTitleView = findViewById(R.id.main_title);
         mContentRecyclerView = findViewById(R.id.main_recyclerview);
 
         setupRecyclerView();
         loadContent();
+        setupTitle();
     }
 
     @Override
@@ -116,6 +122,14 @@ public final class MainActivity extends AppCompatActivity implements SelectionIn
         mContentRecyclerView.setAdapter(mAdapter);
     }
 
+    private void setupTitle() {
+        mContentLayout.setOnScrollChangeListener((View.OnScrollChangeListener)
+                (v, scrollX, scrollY, oldScrollX, oldScrollY) -> {
+                    final int base = v.getHeight() / 8;
+                    mTitleView.setAlpha((float) (base - scrollY) / base);
+                });
+    }
+
     private void loadContent() {
         new FetchDataTask(new FetchDataTask.Callback() {
             @Override
@@ -146,7 +160,7 @@ public final class MainActivity extends AppCompatActivity implements SelectionIn
     private void postContentLoaded() {
         mLoadingTextView.setVisibility(View.GONE);
         mLoadingProgressBar.setVisibility(View.GONE);
-        mContentRecyclerView.setVisibility(View.VISIBLE);
+        mContentLayout.setVisibility(View.VISIBLE);
     }
 
     private void pickWallpaperFromExternalStorage() {

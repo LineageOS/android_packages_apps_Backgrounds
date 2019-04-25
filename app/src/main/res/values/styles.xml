@@ -47,4 +47,8 @@
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">16sp</item>
     </style>
+
+    <style name="AppTheme.AppTitle" parent="AppTheme.ToolbarTitle">
+        <item name="android:textSize">48sp</item>
+    </style>
 </resources>

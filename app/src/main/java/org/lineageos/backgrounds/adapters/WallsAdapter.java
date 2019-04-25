@@ -60,14 +60,8 @@ public final class WallsAdapter extends RecyclerView.Adapter<WallpaperHolder> {
 
     @Override
     public void onBindViewHolder(final @NonNull WallpaperHolder holder, final int position) {
-        /*
-         * + 2 is for the last 2 items of the list as the one
-         * before the last might happen to end "below" the real
-         * last one
-         */
-        final boolean isLast = position + 2 == mData.size();
         final WallpaperBundle bundle = mData.get(position);
-        holder.bind(bundle, isLast);
+        holder.bind(bundle);
     }
 
     @Override
