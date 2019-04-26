@@ -111,6 +111,7 @@ public final class ApplyActivity extends AppCompatActivity {
     }
 
     private void setupBottomSheet() {
+        mApplySheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
         mApplySheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @SuppressLint("SwitchIntDef")
             @Override
@@ -207,9 +208,9 @@ public final class ApplyActivity extends AppCompatActivity {
     }
 
     private void applyWallpaper(final int flags) {
-        hideApplyLayout();
-
         mIsApplyingWallpaper = true;
+
+        hideApplyLayout();
 
         final Drawable drawable = mPreviewView.getDrawable();
 
@@ -243,8 +244,6 @@ public final class ApplyActivity extends AppCompatActivity {
     }
 
     private void showApplyLayout() {
-        mApplySheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
-
         new Handler().postDelayed(() ->
                 mApplySheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED), 350);
     }
@@ -270,7 +269,6 @@ public final class ApplyActivity extends AppCompatActivity {
 
         // SystemUI
         UiUtils.setStatusBarColor(getWindow(), color);
-
     }
 
     private void quitIfDoingNothing() {
