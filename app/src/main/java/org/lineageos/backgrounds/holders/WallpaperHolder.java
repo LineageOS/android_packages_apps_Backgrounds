@@ -32,8 +32,6 @@ public class WallpaperHolder extends RecyclerView.ViewHolder {
     @NonNull
     final SelectionInterface callback;
 
-    ImageView previewView;
-
     public WallpaperHolder(@NonNull View itemView,
                            @NonNull SelectionInterface callback) {
         super(itemView);
@@ -41,7 +39,7 @@ public class WallpaperHolder extends RecyclerView.ViewHolder {
     }
 
     public void bind(@NonNull final WallpaperBundle bundle) {
-        previewView = itemView.findViewById(R.id.item_wallpaper_preview);
+        ImageView previewView = itemView.findViewById(R.id.item_wallpaper_preview);
         TextView nameView = itemView.findViewById(R.id.item_wallpaper_name);
 
         // We can't set this in xml layout: https://issuetracker.google.com/issues/37036728
