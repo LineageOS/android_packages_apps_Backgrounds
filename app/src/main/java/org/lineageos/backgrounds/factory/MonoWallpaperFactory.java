@@ -15,7 +15,6 @@
  */
 package org.lineageos.backgrounds.factory;
 
-import android.annotation.SuppressLint;
 import android.graphics.drawable.ColorDrawable;
 
 import androidx.annotation.ColorInt;
@@ -29,7 +28,6 @@ public final class MonoWallpaperFactory {
     private MonoWallpaperFactory() {
     }
 
-    @SuppressLint("DefaultLocale")
     public static WallpaperBundle build(@NonNull String name,
                                         @ColorInt final int color) {
         return new WallpaperBundle(name, new ColorDrawable(color), color, WallpaperType.MONO);
