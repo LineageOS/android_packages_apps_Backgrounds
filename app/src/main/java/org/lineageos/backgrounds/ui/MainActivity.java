@@ -110,8 +110,6 @@ public final class MainActivity extends AppCompatActivity implements SelectionIn
     }
 
     private void setupRecyclerView() {
-        //UiUtils.addSystemUiPadding(getResources(), mContentRecyclerView);
-
         mAdapter = new WallsAdapter(this);
 
         int numOfColumns = getResources().getInteger(R.integer.main_list_columns);
