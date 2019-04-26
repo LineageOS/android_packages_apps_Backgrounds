@@ -19,7 +19,6 @@ import android.app.WallpaperManager;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Color;
-import android.util.TypedValue;
 
 import androidx.annotation.NonNull;
 
@@ -66,10 +65,9 @@ final class FetchDataImpl {
         String[] names = res.getStringArray(R.array.wallpaper_built_in_names);
         TypedArray drawables = res.obtainTypedArray(R.array.wallpaper_built_in_drawables);
         for (int i = 0; i < drawables.length(); i++) {
-            final TypedValue value = new TypedValue();
-            drawables.getValue(i, value);
-            if (value.resourceId != 0) {
-                mData.add(BuiltInWallpaperFactory.build(names[i], res, value.resourceId));
+            final int resourceId = drawables.getResourceId(i, 0);
+            if (resourceId != 0) {
+                mData.add(BuiltInWallpaperFactory.build(names[i], res, resourceId));
             }
         }
 
@@ -93,10 +91,9 @@ final class FetchDataImpl {
         String[] names = res.getStringArray(R.array.wallpaper_gradient_names);
         TypedArray gradients = res.obtainTypedArray(R.array.wallpaper_gradient_drawables);
         for (int i = 0; i < gradients.length(); i++) {
-            final TypedValue value = new TypedValue();
-            gradients.getValue(i, value);
-            if (value.resourceId != 0) {
-                mData.add(GradientWallpaperFactory.build(names[i], res, value.resourceId));
+            final int resourceId = gradients.getResourceId(i, 0);
+            if (resourceId != 0) {
+                mData.add(GradientWallpaperFactory.build(names[i], res, resourceId));
             }
         }
 
