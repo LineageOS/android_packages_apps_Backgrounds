@@ -16,9 +16,11 @@
 package org.lineageos.backgrounds.holders;
 
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 
+import org.lineageos.backgrounds.R;
 import org.lineageos.backgrounds.bundle.WallpaperBundle;
 import org.lineageos.backgrounds.ui.SelectionInterface;
 
@@ -32,6 +34,7 @@ public final class UserHolder extends WallpaperHolder {
     @Override
     public void bind(@NonNull final WallpaperBundle bundle) {
         super.bind(bundle);
+        ImageView previewView = itemView.findViewById(R.id.item_wallpaper_preview);
 
         itemView.setOnClickListener(v -> callback.onWallpaperSelected(previewView, null));
     }
