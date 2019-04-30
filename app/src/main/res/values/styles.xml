@@ -48,7 +48,7 @@
         <item name="android:textSize">16sp</item>
     </style>
 
-    <style name="AppTheme.AppTitle" parent="AppTheme.ToolbarTitle">
+    <style name="AppTheme.AppTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:textSize">48sp</item>
     </style>
 </resources>
