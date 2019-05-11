@@ -41,7 +41,7 @@ android {
 
     sourceSets {
         main {
-            res.srcDirs = ['src/main/res', 'src/main/res_1080p']
+            res.srcDirs = ['src/main/res', 'src/main/res_1080p/full', 'src/main/res_1080p/common']
         }
     }
 }

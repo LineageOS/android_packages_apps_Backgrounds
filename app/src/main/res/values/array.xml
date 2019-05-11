@@ -46,33 +46,6 @@
         <item>@string/wallpaper_mono_white</item>
     </string-array>
 
-    <!-- BuiltIn -->
-    <array name="wallpaper_built_in_drawables">
-        <item>@drawable/abstract_ink</item>
-        <item>@drawable/abstract_orderofchaos</item>
-        <item>@drawable/abstract_spacestory</item>
-        <item>@drawable/nature_ice</item>
-        <item>@drawable/nature_nebula</item>
-        <item>@drawable/nature_night</item>
-        <item>@drawable/nature_sea</item>
-        <item>@drawable/space_riseup</item>
-        <item>@drawable/urban_dayroad</item>
-        <item>@drawable/urban_nightroad</item>
-    </array>
-
-    <string-array name="wallpaper_built_in_names">
-        <item>@string/wallpaper_built_in_ink</item>
-        <item>@string/wallpaper_built_in_orderofchaos</item>
-        <item>@string/wallpaper_built_in_spacestory</item>
-        <item>@string/wallpaper_built_in_ice</item>
-        <item>@string/wallpaper_built_in_nebula</item>
-        <item>@string/wallpaper_built_in_night</item>
-        <item>@string/wallpaper_built_in_sea</item>
-        <item>@string/wallpaper_built_in_riseup</item>
-        <item>@string/wallpaper_built_in_dayroad</item>
-        <item>@string/wallpaper_built_in_nightroad</item>
-    </string-array>
-
     <!-- Gradients -->
     <array name="wallpaper_gradient_drawables">
         <item>@drawable/gradient_iron</item>
