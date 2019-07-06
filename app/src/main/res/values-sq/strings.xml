@@ -19,6 +19,9 @@
     <string name="app_name">Sfonde</string>
     <string name="main_loading">Duke u ngarkuar\u2026</string>
     <string name="main_wallpaper_pick">Imazhet e tua</string>
+    <string name="apply_both_action">Ekranin kryesor &amp; kyçur</string>
+    <string name="apply_home_action">Ekrani kryesor</string>
+    <string name="apply_lock_action">Ekrani i kyçur</string>
     <string name="apply_success">Sfondi u vendos</string>
     <string name="apply_failure">E pa mundur për tu vendosur ky sfond</string>
     <string name="apply_close">Mbyll</string>

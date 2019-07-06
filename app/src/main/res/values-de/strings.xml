@@ -22,6 +22,8 @@
     <string name="apply_both_action">Start- &amp; Sperrbildschirm</string>
     <string name="apply_home_action">Startbildschirm</string>
     <string name="apply_lock_action">Sperrbildschirm</string>
+    <string name="apply_success">Hintergrundbild angewendet</string>
+    <string name="apply_failure">Hintergrundbild kann nicht angewendet werden</string>
     <string name="apply_close">Schließen</string>
     <string name="wallpaper_mono_black">Schwarz</string>
     <string name="wallpaper_mono_blue">Blau</string>
@@ -32,6 +34,7 @@
     <string name="wallpaper_mono_pink">Pink</string>
     <string name="wallpaper_mono_purple">Violett</string>
     <string name="wallpaper_mono_red">Rot</string>
+    <string name="wallpaper_mono_teal">Blaugrün</string>
     <string name="wallpaper_mono_white">Weiß</string>
     <string name="wallpaper_mono_yellow">Gelb</string>
     <string name="wallpaper_gradient_iron">Eisengrau</string>
@@ -40,5 +43,7 @@
     <string name="wallpaper_gradient_neon">Neon</string>
     <string name="wallpaper_gradient_ocean">Ozeanblau</string>
     <string name="wallpaper_gradient_orange">Orange</string>
+    <string name="wallpaper_gradient_peach">Pfirsich</string>
     <string name="wallpaper_gradient_plum">Pflaumenblau</string>
+    <string name="wallpaper_gradient_shine">Glanz</string>
 </resources>

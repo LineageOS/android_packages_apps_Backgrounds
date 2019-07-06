@@ -18,7 +18,32 @@
 <resources>
     <string name="app_name">Taustapildid</string>
     <string name="main_loading">Laadimine\u2026</string>
+    <string name="main_wallpaper_pick">Teie pildid</string>
     <string name="apply_both_action">Avaekraan &amp; lukustuskuva</string>
     <string name="apply_home_action">Avaekraan</string>
     <string name="apply_lock_action">Lukustuskuva</string>
+    <string name="apply_success">Taustapilt on määratud</string>
+    <string name="apply_failure">Seda taustapilti ei saa määrata</string>
+    <string name="apply_close">Sulge</string>
+    <string name="wallpaper_mono_black">Must</string>
+    <string name="wallpaper_mono_blue">Sinine</string>
+    <string name="wallpaper_mono_brown">Pruun</string>
+    <string name="wallpaper_mono_cyan">Erksinine</string>
+    <string name="wallpaper_mono_green">Roheline</string>
+    <string name="wallpaper_mono_orange">Oranž</string>
+    <string name="wallpaper_mono_pink">Roosa</string>
+    <string name="wallpaper_mono_purple">Lilla</string>
+    <string name="wallpaper_mono_red">Punane</string>
+    <string name="wallpaper_mono_teal">Sinakasroheline</string>
+    <string name="wallpaper_mono_white">Valge</string>
+    <string name="wallpaper_mono_yellow">Kollane</string>
+    <string name="wallpaper_gradient_iron">Raud</string>
+    <string name="wallpaper_gradient_leaf">Leht</string>
+    <string name="wallpaper_gradient_lemon">Sidrun</string>
+    <string name="wallpaper_gradient_neon">Neoon</string>
+    <string name="wallpaper_gradient_ocean">Ookean</string>
+    <string name="wallpaper_gradient_orange">Apelsin</string>
+    <string name="wallpaper_gradient_peach">Virsik</string>
+    <string name="wallpaper_gradient_plum">Ploom</string>
+    <string name="wallpaper_gradient_shine">Läige</string>
 </resources>
