@@ -18,7 +18,7 @@
 <resources>
     <string name="app_name">Fons de pantalla</string>
     <string name="main_loading">S\'està carregant\u2026</string>
-    <string name="main_wallpaper_pick">Les vostres imatges</string>
+    <string name="main_wallpaper_pick">Les teves imatges</string>
     <string name="apply_both_action">Pantalla principal i de bloqueig</string>
     <string name="apply_home_action">Pantalla principal</string>
     <string name="apply_lock_action">Pantalla de bloqueig</string>
