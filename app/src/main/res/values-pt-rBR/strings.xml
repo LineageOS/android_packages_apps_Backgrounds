@@ -16,7 +16,34 @@
   limitations under the License.
   -->
 <resources>
+    <string name="app_name">Papéis de parede</string>
+    <string name="main_loading">Carregando\u2026</string>
+    <string name="main_wallpaper_pick">Suas imagens</string>
+    <string name="apply_both_action">Tela inicial e de bloqueio</string>
+    <string name="apply_home_action">Tela inicial</string>
+    <string name="apply_lock_action">Tela de bloqueio</string>
     <string name="apply_success">Papel de parede aplicado</string>
+    <string name="apply_failure">Não foi possível aplicar este papel de parede</string>
+    <string name="apply_close">Fechar</string>
+    <string name="wallpaper_mono_black">Preto</string>
+    <string name="wallpaper_mono_blue">Azul</string>
+    <string name="wallpaper_mono_brown">Marrom</string>
     <string name="wallpaper_mono_cyan">Ciano</string>
     <string name="wallpaper_mono_green">Verde</string>
+    <string name="wallpaper_mono_orange">Laranja</string>
+    <string name="wallpaper_mono_pink">Rosa</string>
+    <string name="wallpaper_mono_purple">Violeta</string>
+    <string name="wallpaper_mono_red">Vermelho</string>
+    <string name="wallpaper_mono_teal">Verde-azulado</string>
+    <string name="wallpaper_mono_white">Branco</string>
+    <string name="wallpaper_mono_yellow">Amarelo</string>
+    <string name="wallpaper_gradient_iron">Ferro</string>
+    <string name="wallpaper_gradient_leaf">Folha</string>
+    <string name="wallpaper_gradient_lemon">Limão</string>
+    <string name="wallpaper_gradient_neon">Neon</string>
+    <string name="wallpaper_gradient_ocean">Oceano</string>
+    <string name="wallpaper_gradient_orange">Laranja</string>
+    <string name="wallpaper_gradient_peach">Pêssego</string>
+    <string name="wallpaper_gradient_plum">Ameixa</string>
+    <string name="wallpaper_gradient_shine">Brilhante</string>
 </resources>
