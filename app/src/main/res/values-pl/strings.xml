@@ -16,6 +16,8 @@
   limitations under the License.
   -->
 <resources>
+    <string name="app_name">Tapety</string>
+    <string name="main_loading">Ładowanie\u2026</string>
     <string name="main_wallpaper_pick">Twoje obrazy</string>
     <string name="apply_both_action">Ekran główny i blokady</string>
     <string name="apply_home_action">Ekran główny</string>
@@ -23,4 +25,25 @@
     <string name="apply_success">Tapeta ustawiona</string>
     <string name="apply_failure">Nie można ustawić tapety</string>
     <string name="apply_close">Zamknij</string>
+    <string name="wallpaper_mono_black">Czarna</string>
+    <string name="wallpaper_mono_blue">Niebieska</string>
+    <string name="wallpaper_mono_brown">Brązowa</string>
+    <string name="wallpaper_mono_cyan">Turkusowa</string>
+    <string name="wallpaper_mono_green">Zielona</string>
+    <string name="wallpaper_mono_orange">Pomarańczowa</string>
+    <string name="wallpaper_mono_pink">Różowa</string>
+    <string name="wallpaper_mono_purple">Fioletowa</string>
+    <string name="wallpaper_mono_red">Czerwona</string>
+    <string name="wallpaper_mono_teal">Morska</string>
+    <string name="wallpaper_mono_white">Biała</string>
+    <string name="wallpaper_mono_yellow">Żółta</string>
+    <string name="wallpaper_gradient_iron">Żelazny</string>
+    <string name="wallpaper_gradient_leaf">Liściasty</string>
+    <string name="wallpaper_gradient_lemon">Cytrynowy</string>
+    <string name="wallpaper_gradient_neon">Neonowy</string>
+    <string name="wallpaper_gradient_ocean">Błękitny</string>
+    <string name="wallpaper_gradient_orange">Pomarańczowy</string>
+    <string name="wallpaper_gradient_peach">Brzoskwiniowy</string>
+    <string name="wallpaper_gradient_plum">Śliwkowy</string>
+    <string name="wallpaper_gradient_shine">Błyszczący</string>
 </resources>
