@@ -1,5 +1,5 @@
 <!--
-  Copyright (C) 2019 The LineageOS Project
+  Copyright (C) 2020 The LineageOS Project
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -13,8 +13,17 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<resources>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.lineageos.backgrounds">
 
-    <color name="colorPrimary">#212121</color>
-    <color name="colorPrimaryDark">#000000</color>
-</resources>
+    <application android:label="@string/app_name">
+
+        <receiver android:name=".LineageBackgrounds">
+            <intent-filter>
+                <action android:name="com.android.launcher3.action.PARTNER_CUSTOMIZATION"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>

@@ -14,10 +14,6 @@
   limitations under the License.
   -->
 <resources>
-    <dimen name="item_margin_vertical">8dp</dimen>
-    <dimen name="item_margin_horizontal">4dp</dimen>
 
-    <dimen name="main_list_margin_left">0dp</dimen>
-
-    <dimen name="apply_margin_horizontal">0dp</dimen>
+    <string name="app_name">Wallpapers</string>
 </resources>

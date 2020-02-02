@@ -35,24 +35,9 @@ LOCAL_RESOURCE_DIR += $(LOCAL_PATH)/res_1080p/full
 endif
 endif
 
-LOCAL_SRC_FILES := \
-    $(call all-java-files-under, java)
-
 LOCAL_USE_AAPT2 := true
 
-LOCAL_STATIC_ANDROID_LIBRARIES := \
-    androidx.annotation_annotation \
-    androidx.appcompat_appcompat \
-    androidx.palette_palette \
-    androidx.recyclerview_recyclerview \
-    androidx.transition_transition \
-    com.google.android.material_material
-
 LOCAL_PACKAGE_NAME := Backgrounds
-
-LOCAL_PROGUARD_FLAG_FILES := ../../proguard-rules.pro
-
-LOCAL_AAPT_FLAGS := --auto-add-overlay
 
 LOCAL_SDK_VERSION := current
 
