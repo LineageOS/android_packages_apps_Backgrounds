@@ -27,5 +27,17 @@
         <item>gradient_peach</item>
         <item>gradient_plum</item>
         <item>gradient_shine</item>
+        <item>mono_black</item>
+        <item>mono_blue</item>
+        <item>mono_brown</item>
+        <item>mono_cyan</item>
+        <item>mono_green</item>
+        <item>mono_orange</item>
+        <item>mono_pink</item>
+        <item>mono_purple</item>
+        <item>mono_red</item>
+        <item>mono_teal</item>
+        <item>mono_white</item>
+        <item>mono_yellow</item>
     </array>
 </resources>
