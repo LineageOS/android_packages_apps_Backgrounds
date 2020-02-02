@@ -18,5 +18,14 @@
         <item>nature_nebula</item>
         <item>nature_night</item>
         <item>urban_dayroad</item>
+        <item>gradient_iron</item>
+        <item>gradient_leaf</item>
+        <item>gradient_lemon</item>
+        <item>gradient_neon</item>
+        <item>gradient_ocean</item>
+        <item>gradient_orange</item>
+        <item>gradient_peach</item>
+        <item>gradient_plum</item>
+        <item>gradient_shine</item>
     </array>
 </resources>
