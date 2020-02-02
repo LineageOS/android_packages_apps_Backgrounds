@@ -49,6 +49,7 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     com.google.android.material_material
 
 LOCAL_PACKAGE_NAME := Backgrounds
+LOCAL_PRIVILEGED_MODULE := true
 
 LOCAL_PROGUARD_FLAG_FILES := ../../proguard-rules.pro
 
