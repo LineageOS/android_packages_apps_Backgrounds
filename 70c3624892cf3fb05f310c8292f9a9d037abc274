@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2fec7a35_ed21f59e",
+        "filename": "Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2020-05-05T12:02:24Z",
+      "side": 1,
+      "message": "The screen height isn\u0027t used in this repo, why do you add this?",
+      "revId": "70c3624892cf3fb05f310c8292f9a9d037abc274",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
