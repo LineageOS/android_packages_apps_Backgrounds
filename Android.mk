@@ -17,6 +17,15 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
+ifeq ($(TARGET_SCREEN_WIDTH),)
+    $(warning TARGET_SCREEN_WIDTH is not set, using default value: 1080)
+    TARGET_SCREEN_WIDTH := 1080
+endif
+ifeq ($(TARGET_SCREEN_HEIGHT),)
+    $(warning TARGET_SCREEN_HEIGHT is not set, using default value: 1920)
+    TARGET_SCREEN_HEIGHT := 1920
+endif
+
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 
 ifeq ($(shell test $(TARGET_SCREEN_WIDTH) -gt 1080; echo $$?),0)
