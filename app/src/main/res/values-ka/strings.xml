@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2019 The LineageOS Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<resources>
+    <string name="app_name">ფონები</string>
+    <string name="main_loading">იტვირთება\u2026</string>
+    <string name="main_wallpaper_pick">თქვენი სურათები</string>
+    <string name="apply_both_action">მთავარი და ჩამკეტი ეკრანი</string>
+    <string name="apply_home_action">მთავარი ეკრანი</string>
+    <string name="apply_lock_action">ჩამკეტი ეკრანი</string>
+    <string name="apply_success">ფონი აისახა</string>
+    <string name="apply_failure">ვერ ხერხდება ამ ფონის დაყენება</string>
+    <string name="apply_close">დახურვა</string>
+    <string name="wallpaper_mono_black">შავი</string>
+    <string name="wallpaper_mono_blue">ლურჯი</string>
+    <string name="wallpaper_mono_brown">ყავისფერი</string>
+    <string name="wallpaper_mono_cyan">მოცისფრო</string>
+    <string name="wallpaper_mono_green">მწვანე</string>
+    <string name="wallpaper_mono_orange">ნარინჯისფერი</string>
+    <string name="wallpaper_mono_pink">ვარდისფერი</string>
+    <string name="wallpaper_mono_purple">იისფერი</string>
+    <string name="wallpaper_mono_red">წითელი</string>
+    <string name="wallpaper_mono_teal">მომწვანო</string>
+    <string name="wallpaper_mono_white">თეთრი</string>
+    <string name="wallpaper_mono_yellow">ყვითელი</string>
+    <string name="wallpaper_gradient_iron">რკინა</string>
+    <string name="wallpaper_gradient_leaf">ლითონი</string>
+    <string name="wallpaper_gradient_lemon">ლიმონი</string>
+    <string name="wallpaper_gradient_neon">ნეონი</string>
+    <string name="wallpaper_gradient_ocean">ოკეანე</string>
+    <string name="wallpaper_gradient_orange">ნარინჯისფერი</string>
+    <string name="wallpaper_gradient_peach">ატამი</string>
+    <string name="wallpaper_gradient_plum">ქლიავი</string>
+    <string name="wallpaper_gradient_shine">ელვარე</string>
+</resources>
