@@ -16,21 +16,33 @@
   -->
 <resources>
     <string name="app_name">Pàipearan-balla</string>
+    <string name="main_loading">’Ga luchdadh\u2026</string>
+    <string name="main_wallpaper_pick">Na dealbhan agad</string>
+    <string name="apply_both_action">An sgrìn-ghlasaidh ⁊ dachaigh</string>
     <string name="apply_home_action">An sgrìn dachaigh</string>
     <string name="apply_lock_action">An sgrìn-ghlasaidh</string>
+    <string name="apply_success">Chaidh am pàipear-balla a chur an sàs</string>
+    <string name="apply_failure">Cha ghabh am pàipear-balla seo a shuidheachadh</string>
     <string name="apply_close">Dùin</string>
     <string name="wallpaper_mono_black">Dubh</string>
     <string name="wallpaper_mono_blue">Gorm</string>
     <string name="wallpaper_mono_brown">Donn</string>
     <string name="wallpaper_mono_cyan">Saidhean</string>
     <string name="wallpaper_mono_green">Uaine</string>
+    <string name="wallpaper_mono_orange">Orains</string>
     <string name="wallpaper_mono_pink">Pinc</string>
+    <string name="wallpaper_mono_purple">Purpaidh</string>
     <string name="wallpaper_mono_red">Dearg</string>
     <string name="wallpaper_mono_teal">Saidhean</string>
     <string name="wallpaper_mono_white">Geal</string>
     <string name="wallpaper_mono_yellow">Buidhe</string>
     <string name="wallpaper_gradient_iron">Iarann</string>
+    <string name="wallpaper_gradient_leaf">Duilleag</string>
+    <string name="wallpaper_gradient_lemon">Liomaid</string>
     <string name="wallpaper_gradient_neon">Nìtheon</string>
     <string name="wallpaper_gradient_ocean">Cuan</string>
+    <string name="wallpaper_gradient_orange">Orains</string>
+    <string name="wallpaper_gradient_peach">Peitseag</string>
     <string name="wallpaper_gradient_plum">Dath plumais</string>
+    <string name="wallpaper_gradient_shine">Deàrrs</string>
 </resources>
