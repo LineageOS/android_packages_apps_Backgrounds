@@ -39,6 +39,8 @@ LOCAL_USE_AAPT2 := true
 
 LOCAL_PACKAGE_NAME := Backgrounds
 
+LOCAL_PRODUCT_MODULE := true
+
 LOCAL_AAPT_FLAGS := --auto-add-overlay
 
 LOCAL_SDK_VERSION := current
