@@ -19,7 +19,7 @@ include $(CLEAR_VARS)
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 
-ifeq ($(shell test $(TARGET_SCREEN_WIDTH) -gt 1080; echo $$?),0)
+ifeq ($(shell test $(TARGET_SCREEN_WIDTH) -gt 1080 2>/dev/null; echo $$?),0)
 LOCAL_RESOURCE_DIR += $(LOCAL_PATH)/res_1440p/common
 ifeq ($(PRODUCT_SIZE), mini)
 LOCAL_RESOURCE_DIR += $(LOCAL_PATH)/res_1440p/small
