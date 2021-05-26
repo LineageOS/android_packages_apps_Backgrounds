@@ -18,6 +18,7 @@ package org.lineageos.backgrounds.factory;
 import android.app.WallpaperManager;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.BitmapDrawable;
 
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
@@ -25,6 +26,7 @@ import androidx.annotation.NonNull;
 import org.lineageos.backgrounds.R;
 import org.lineageos.backgrounds.bundle.WallpaperBundle;
 import org.lineageos.backgrounds.bundle.WallpaperType;
+import org.lineageos.backgrounds.util.UiUtils;
 
 public final class BuiltInWallpaperFactory {
 
@@ -33,8 +35,9 @@ public final class BuiltInWallpaperFactory {
 
     public static WallpaperBundle build(@NonNull final String name,
                                         @NonNull final Resources res,
-                                        @DrawableRes final int drawableRes) {
-        Drawable drawable = res.getDrawable(drawableRes, res.newTheme());
+                                        @DrawableRes final int drawableRes) {        
+        Drawable drawable = new BitmapDrawable(res, UiUtils.decodeSampledBitmapFromResource(res, drawableRes, 250, 500));
+
         return new WallpaperBundle(name, drawable, drawableRes, WallpaperType.BUILT_IN);
     }
 
