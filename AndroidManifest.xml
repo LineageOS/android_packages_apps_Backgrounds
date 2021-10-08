@@ -18,12 +18,11 @@
     package="org.lineageos.backgrounds">
 
     <application android:label="@string/app_name">
-
-        <receiver android:name=".LineageBackgrounds">
+        <receiver android:name=".StubReceiver"
+                  android:exported="true">
             <intent-filter>
-                <action android:name="com.android.launcher3.action.PARTNER_CUSTOMIZATION"/>
+                <action android:name="com.android.launcher3.action.PARTNER_CUSTOMIZATION" />
             </intent-filter>
         </receiver>
-
     </application>
 </manifest>
