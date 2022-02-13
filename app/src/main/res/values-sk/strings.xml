@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2019 The LineageOS Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<resources>
+    <string name="app_name">Tapety</string>
+    <string name="main_loading">Prebieha načítavanie\u2026</string>
+    <string name="main_wallpaper_pick">Vaše obrázky</string>
+    <string name="apply_both_action">Domovská &amp; uzamykacia obrazovka</string>
+    <string name="apply_home_action">Domovská obrazovka</string>
+    <string name="apply_lock_action">Zamykacia obrazovka</string>
+    <string name="apply_success">Tapeta bola nastavená</string>
+    <string name="apply_failure">Nie je možné nastaviť túto tapetu</string>
+    <string name="apply_close">Zavrieť</string>
+    <string name="wallpaper_mono_black">Čierna</string>
+    <string name="wallpaper_mono_blue">Modrá</string>
+    <string name="wallpaper_mono_brown">Hnedá</string>
+    <string name="wallpaper_mono_cyan">Tyrkysová</string>
+    <string name="wallpaper_mono_green">Zelená</string>
+    <string name="wallpaper_mono_orange">Oranžová</string>
+    <string name="wallpaper_mono_pink">Ružová</string>
+    <string name="wallpaper_mono_purple">Fialová</string>
+    <string name="wallpaper_mono_red">Červená</string>
+    <string name="wallpaper_mono_teal">Tyrkysovozelená</string>
+    <string name="wallpaper_mono_white">Biela</string>
+    <string name="wallpaper_mono_yellow">Žltá</string>
+    <string name="wallpaper_gradient_iron">Oceľová</string>
+    <string name="wallpaper_gradient_leaf">List</string>
+    <string name="wallpaper_gradient_lemon">Citrón</string>
+    <string name="wallpaper_gradient_neon">Neón</string>
+    <string name="wallpaper_gradient_ocean">Oceán</string>
+    <string name="wallpaper_gradient_orange">Oranžová</string>
+    <string name="wallpaper_gradient_peach">Broskyňa</string>
+    <string name="wallpaper_gradient_plum">Slivka</string>
+    <string name="wallpaper_gradient_shine">Lesk</string>
+</resources>

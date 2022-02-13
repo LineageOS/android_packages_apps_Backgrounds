@@ -17,10 +17,13 @@
 <resources>
     <string name="app_name">Fondos de pantalla</string>
     <string name="main_loading">Cargando\u2026</string>
-    <string name="main_wallpaper_pick">Imáxenes de to</string>
-    <string name="apply_both_action">Pantalla d\'aniciu &amp; bloquéu</string>
+    <string name="main_wallpaper_pick">Les tos imáxenes</string>
+    <string name="apply_both_action">Pantalla d\'aniciu y de bloquéu</string>
     <string name="apply_home_action">Pantalla d\'aniciu</string>
     <string name="apply_lock_action">Pantalla de bloquéu</string>
+    <string name="apply_success">Aplicóse\'l fondu de pantalla</string>
+    <string name="apply_failure">Nun ye posible afitar esti fondu de pantalla</string>
+    <string name="apply_close">Zarrar</string>
     <string name="wallpaper_mono_black">Prietu</string>
     <string name="wallpaper_mono_blue">Azul</string>
     <string name="wallpaper_mono_brown">Marrón</string>
@@ -29,5 +32,17 @@
     <string name="wallpaper_mono_orange">Naranxa</string>
     <string name="wallpaper_mono_pink">Rosa</string>
     <string name="wallpaper_mono_purple">Moráu</string>
-    <string name="wallpaper_mono_red">Bermeyu</string>
+    <string name="wallpaper_mono_red">Coloráu</string>
+    <string name="wallpaper_mono_teal">Verde azulao</string>
+    <string name="wallpaper_mono_white">Blancu</string>
+    <string name="wallpaper_mono_yellow">Mariellu</string>
+    <string name="wallpaper_gradient_iron">Fierro</string>
+    <string name="wallpaper_gradient_leaf">Fueya</string>
+    <string name="wallpaper_gradient_lemon">Llimón</string>
+    <string name="wallpaper_gradient_neon">Neón</string>
+    <string name="wallpaper_gradient_ocean">Océanu</string>
+    <string name="wallpaper_gradient_orange">Naranxa</string>
+    <string name="wallpaper_gradient_peach">Piescu</string>
+    <string name="wallpaper_gradient_plum">Ciruela</string>
+    <string name="wallpaper_gradient_shine">Brilu</string>
 </resources>

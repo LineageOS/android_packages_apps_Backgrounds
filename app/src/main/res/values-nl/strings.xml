@@ -23,6 +23,7 @@
     <string name="apply_lock_action">Vergrendelingsscherm</string>
     <string name="apply_success">Achtergrond toegepast</string>
     <string name="apply_failure">Achtergrondafbeelding kan niet worden toegepast</string>
+    <string name="apply_close">Afsluiten</string>
     <string name="wallpaper_mono_black">Zwart</string>
     <string name="wallpaper_mono_blue">Blauw</string>
     <string name="wallpaper_mono_brown">Bruin</string>
