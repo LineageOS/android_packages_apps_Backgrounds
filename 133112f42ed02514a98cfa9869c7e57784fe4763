@@ -51,6 +51,24 @@
       "message": "\u003e Patch Set 2:\n\u003e \n\u003e why don\u0027t we just do the opposite? Make it so that home builders can include it by flag.\n\u003e \n\u003e or what Mike was saying, give an option in app to download extra wallpapers\n\ncurrently we are building it as ThemePicker plugin, so will need to revert old one for download support. or do exclude.",
       "revId": "133112f42ed02514a98cfa9869c7e57784fe4763",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "90f8b2c1_11743dd8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-04-16T13:33:39Z",
+      "side": 1,
+      "message": "* revert to old app\nhttps://github.com/althafvly/android_packages_apps_Backgrounds/commit/b47e11475becdfa9342770c5e0227dadb0520af5",
+      "parentUuid": "194867c4_6268f5bc",
+      "revId": "133112f42ed02514a98cfa9869c7e57784fe4763",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
