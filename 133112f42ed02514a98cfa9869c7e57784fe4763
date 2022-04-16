@@ -16,6 +16,24 @@
       "message": "I say we just provide the old wallpapers somewhere else for separate downloading (or just download them from 18.1 github), this doesn\u0027t make sense to me given 12 got a full redesign.",
       "revId": "133112f42ed02514a98cfa9869c7e57784fe4763",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "61c1a761_b199d4f0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-04-16T10:10:05Z",
+      "side": 1,
+      "message": "i don\u0027t mind both, downloading old wallpapers if needed would be great.",
+      "parentUuid": "16825799_ec1ee957",
+      "revId": "133112f42ed02514a98cfa9869c7e57784fe4763",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
