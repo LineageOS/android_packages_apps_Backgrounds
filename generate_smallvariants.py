@@ -23,7 +23,7 @@ def generate_smallvariants(resource):
         with Image.open(os.path.join(wallpapers_path, wallpaper)) as img:
             size = int(img.width / 4), int(img.height / 4)
 
-            img_small = img.resize(size, Image.ANTIALIAS)
+            img_small = img.resize(size, Image.Resampling.LANCZOS)
             img_small.save(wallpaper_small_path, "JPEG")
 
 def clean(wallpapers_path):
