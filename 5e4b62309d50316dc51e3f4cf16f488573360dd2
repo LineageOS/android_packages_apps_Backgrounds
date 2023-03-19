@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aa3c4929_ee91781b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28963
+      },
+      "writtenOn": "2023-03-19T00:25:35Z",
+      "side": 1,
+      "message": "Images are the same - verified with running the script and checking `git diff`",
+      "revId": "5e4b62309d50316dc51e3f4cf16f488573360dd2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
