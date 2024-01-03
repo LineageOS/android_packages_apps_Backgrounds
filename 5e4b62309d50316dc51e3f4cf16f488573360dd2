@@ -16,6 +16,23 @@
       "message": "Images are the same - verified with running the script and checking `git diff`",
       "revId": "5e4b62309d50316dc51e3f4cf16f488573360dd2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "564fcc8b_f032e2d1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32911
+      },
+      "writtenOn": "2024-01-03T22:56:50Z",
+      "side": 1,
+      "message": "ANTIALIAS has now been removed from python so this patch is now required",
+      "revId": "5e4b62309d50316dc51e3f4cf16f488573360dd2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
