@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "29c805d0_5b880829",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32911
+      },
+      "writtenOn": "2024-01-03T22:56:42Z",
+      "side": 1,
+      "message": "ANTIALIAS has now been removed from python so this patch is now required",
+      "revId": "ff1cf8edc7d5b8769c90db12cd233719f084a3e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
