@@ -1,0 +1,11 @@
+//
+// SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "Backgrounds",
+
+    sdk_version: "current",
+    product_specific: true,
+}
