@@ -7,7 +7,7 @@ SPDX-PackageSupplier = "The LineageOS Project"
 SPDX-PackageDownloadLocation = "https://github.com/LineageOS/android_packages_apps_Backgrounds"
 
 [[annotations]]
-path = ["res_1080p/drawable-nodpi/*.jpg", "res_1440p/drawable-nodpi/*.jpg"]
+path = ["res/drawable-nodpi/*.jpg"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2022 The LineageOS Project"
 SPDX-License-Identifier = "Apache-2.0"

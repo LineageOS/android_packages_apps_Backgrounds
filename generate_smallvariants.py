@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# SPDX-FileCopyrightText: 2020-2023 The LineageOS Project
+# SPDX-FileCopyrightText: 2020-2024 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -10,8 +10,7 @@ from PIL import Image
 
 path = os.path.dirname(os.path.realpath(__file__))
 
-resources = ["res_1080p/drawable-nodpi",
-             "res_1440p/drawable-nodpi"]
+resources = ["res/drawable-nodpi"]
 
 def generate_smallvariants(resource):
     global path
