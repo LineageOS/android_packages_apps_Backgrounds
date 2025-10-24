@@ -16,6 +16,24 @@
       "message": "`apktool d` before and after this patch is identical, how does this fix anything?",
       "revId": "26494635e3feb1428f89f56a4cf1b1e98b559b69",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d563617e_a91ae94a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2025-10-24T07:29:11Z",
+      "side": 1,
+      "message": "Before, the wallpapers were not appearing in wallpaper picker, but afterwards they do, and when I rebuilt, it compiled fwb-res again",
+      "parentUuid": "6378d87c_5e59b181",
+      "revId": "26494635e3feb1428f89f56a4cf1b1e98b559b69",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
