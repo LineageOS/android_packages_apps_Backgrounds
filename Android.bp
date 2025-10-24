@@ -12,4 +12,5 @@ android_app {
 
     sdk_version: "current",
     product_specific: true,
+    aaptflags: ["--auto-add-overlay"],
 }
