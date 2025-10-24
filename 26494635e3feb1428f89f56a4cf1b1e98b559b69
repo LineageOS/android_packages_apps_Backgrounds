@@ -52,6 +52,24 @@
       "parentUuid": "d563617e_a91ae94a",
       "revId": "26494635e3feb1428f89f56a4cf1b1e98b559b69",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3822c9d6_60614054",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2025-10-24T07:30:48Z",
+      "side": 1,
+      "message": "Weird, but they do not appear on my end :/",
+      "parentUuid": "c4bfc966_4d587088",
+      "revId": "26494635e3feb1428f89f56a4cf1b1e98b559b69",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
