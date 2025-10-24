@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6378d87c_5e59b181",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-10-24T07:27:42Z",
+      "side": 1,
+      "message": "`apktool d` before and after this patch is identical, how does this fix anything?",
+      "revId": "26494635e3feb1428f89f56a4cf1b1e98b559b69",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
