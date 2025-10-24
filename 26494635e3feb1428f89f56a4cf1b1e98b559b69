@@ -88,6 +88,24 @@
       "parentUuid": "3822c9d6_60614054",
       "revId": "26494635e3feb1428f89f56a4cf1b1e98b559b69",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e327b1b_be1c89c6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-10-24T07:40:44Z",
+      "side": 1,
+      "message": "can see wallpapers on official 22 too.",
+      "parentUuid": "6b77c259_27f6a78f",
+      "revId": "26494635e3feb1428f89f56a4cf1b1e98b559b69",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
